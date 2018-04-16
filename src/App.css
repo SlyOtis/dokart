@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+*{
+    font-family: 'Raleway', sans-serif;
+}
+.app {
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    font-family: 'Raleway', sans-serif !important;
+    background-color: #42A5F5;
+    overflow: hidden;
+}
