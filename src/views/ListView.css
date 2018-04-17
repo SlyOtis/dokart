@@ -1,0 +1,116 @@
+.listView_container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #B71C1C;
+    display: block;
+    overflow: hidden;
+}
+.listView_scrollPane{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.25s all ease-in-out;
+    box-sizing: border-box;
+}
+.listView_scrollPane_loading{
+    overflow: hidden;
+    padding-top: calc(100vh - 48px - 56px);
+}
+.listView_scrollPane_ready{
+    overflow-y: auto;
+    padding-top: 0;
+}
+.listView_scrollPane::-webkit-scrollbar {
+    position: fixed;
+    width: 0.4em;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.listView_scrollPane::-webkit-scrollbar-track {
+    background-color: #E0E0E0;
+    opacity: 0.75;
+    border: none;
+}
+
+.listView_scrollPane::-webkit-scrollbar-thumb {
+    border: none;
+    background-color: #42A5F5;
+    border-radius: 0.2em;
+}
+.listView_loading_container{
+    position: absolute;
+    horiz-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s all ease-in-out;
+}
+.listView_loading_container_visible{
+    opacity: 1;
+}
+.listView_loading_container_hidden{
+    opacity: 0;
+}
+.listView_head{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background-image: url("../assets/teared_paper.svg");
+    object-fit: cover;
+    object-position: 0 50%;
+    -webkit-filter: drop-shadow( 0 -2px 1px rgba(0,0,0,0.19));
+    filter: drop-shadow( 0 -2px 1px rgba(0,0,0,0.19));
+    z-index: 0;
+}
+.listView_content{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    z-index: 5;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.listView_loading_txt{
+    color: white;
+    animation: txt_grow .60s alternate-reverse infinite;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    top: 10%;
+    margin: auto;
+    display: block;
+    position: absolute;
+}
+.listView_loading_img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+@keyframes txt_grow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.25);
+    }
+}

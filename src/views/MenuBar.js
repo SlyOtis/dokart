@@ -5,7 +5,7 @@ class MenuBar extends Component {
 
     render() {
         return (
-            <div className="menubar_container" style={{height: this.props.height || "56px"}}>
+            <div className="menuBar_container" style={{height: this.props.height || "56px"}}>
 
             </div>
         );

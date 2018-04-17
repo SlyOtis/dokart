@@ -1,0 +1,136 @@
+.toiletSmall_container{
+    width: 100%;
+    height: auto;
+    border: none;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toiletSmall_content_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    box-sizing: border-box;
+}
+.toiletSmall_main{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+.toiletSmall_header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: dashed 0.16em #E0E0E0;
+    box-sizing: border-box;
+}
+.toiletSmall_counter_sum{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.toiletSmall_action_directions{
+    height: 30px;
+    width: auto;
+}
+.toiletSmall_counter{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    justify-self: stretch;
+}
+.toiletSmall_counter_up{
+    color: #66BB6A;
+    width: 40px;
+    height: auto;
+    display: flex;
+    flex: 1;
+}
+.toiletSmall_counter_down{
+    color: #EF5350;
+    width: 40px;
+    height: auto;
+    display: flex;
+    flex: 1;
+}
+.toiletSmall_content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 5px 10px 5px 0;
+    box-sizing: border-box;
+}
+.toiletSmall_info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.toiletSmall_actions{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    border-top: 0.02em #E0E0E0 solid;
+    border-bottom: 0.02em #E0E0E0 solid;
+    background-color: #EEEEEE;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.toiletSmall_action{
+    width: 30px;
+    height: auto;
+}
+.toiletSmall_address{
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+.toiletSmall_place_no{
+    margin: 2px 0;
+    padding: 0;
+    text-align: start;
+}
+.toiletSmall_place_en{
+    margin: 2px 0;
+    padding: 0;
+    text-align: start;
+    font-style: italic;
+}
+.toiletSmall_time{
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+.toiletSmall_times{
+    padding: 0 0 0 5px;
+    margin: 5px 0 0 0;
+}
+h6{
+    text-align: center;
+}

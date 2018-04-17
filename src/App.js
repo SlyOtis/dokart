@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route} from 'react-router-dom'
 import firebase from 'firebase';
-import Splash from "./views/Splash";
-import Login from "./views/Login";
-import Main from "./views/Main";
+import Splash from "./screens/Splash";
+import Login from "./screens/Login";
+import Main from "./screens/Main";
 import history from "./history";
 
 const config = {
