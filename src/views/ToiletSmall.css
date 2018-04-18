@@ -7,6 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: dashed 0.1em #E0E0E0;
+    padding-bottom: 5px;
 }
 .toiletSmall_content_container{
     width: 100%;
@@ -34,7 +36,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
-    border-bottom: dashed 0.16em #E0E0E0;
+    border-bottom: dashed 0.05em #E0E0E0;
     box-sizing: border-box;
 }
 .toiletSmall_counter_sum{
@@ -96,9 +98,11 @@
     flex-direction: row;
     justify-content: start;
     align-items: start;
-    border-top: 0.02em #E0E0E0 solid;
+    border-top: dashed 0.05em #E0E0E0;
+    /*border-top: 0.02em #E0E0E0 solid;
     border-bottom: 0.02em #E0E0E0 solid;
-    background-color: #EEEEEE;
+    background-color: #EEEEEE; */
+    /*border-bottom: 0.1em dashed #E0E0E0;*/
     padding: 5px 10px;
     box-sizing: border-box;
 }

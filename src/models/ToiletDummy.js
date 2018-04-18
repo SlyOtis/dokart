@@ -10,7 +10,7 @@ class ToiletDummy {
     plassering = "address in norwegian";
     pris = "10";
     rullestol = "1";
-    stellrom = "NULL";
+    stellerom = "NULL";
     tid_hverdag = "12:40 - 24:00";
     tid_lordag = "12:40 - 24:00";
     tid_sondag = "12:40 - 24:00";

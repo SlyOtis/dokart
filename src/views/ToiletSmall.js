@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
 import './ToiletSmall.css'
 import {MdArrowDownward, MdArrowUpward, MdDirections, MdAccessible} from 'react-icons/lib/md'
-
+import {FaMale, FaFemale} from 'react-icons/lib/fa'
 class ToiletSmall extends Component {
+
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            accessible: this.props.toilet.rullestol != "NULL",
+            mens: this.props.toilet.herre != "NULL",
+            womens: this.props.toilet.dame != "NULL",
+            pissoir_only: this.props.toilet.pissoir_only != "NULL",
+            nursery: this.props.toilet.stellerom != "NULL"
+        }
+    }
 
     render() {
         return (
@@ -38,7 +50,10 @@ class ToiletSmall extends Component {
                     </div>
                 </div>
                 <div className="toiletSmall_actions">
-                    <MdAccessible className="toiletSmall_action"/>
+                    {this.state.accessible ? <MdAccessible className="toiletSmall_action"/> : null}
+                    {this.state.mens ? <FaMale className="toiletSmall_action"/>: null}
+                    {this.state.womens ? <FaFemale className="toiletSmall_action"/>: null}
+                    {this.state.womens ? <FaFemale className="toiletSmall_action"/>: null}
                 </div>
             </div>
         );
