@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './ToiletSmall.css'
 import {MdArrowDownward, MdArrowUpward, MdDirections, MdAccessible} from 'react-icons/lib/md'
 import {FaMale, FaFemale} from 'react-icons/lib/fa'
-import IconButton from 'react-buttons';
+import IconButton from "./IconButton";
 
 class ToiletSmall extends Component {
 
@@ -86,8 +86,10 @@ class ToiletSmall extends Component {
                 <div className="toiletSmall_footer">
                     <p className="toiletSmall_counter_sum_mat">{this.props.toilet.score} poeng</p>
                     <div className="toiletSmall_actions_mat">
-                        <IconButton faIcon="plus" label="Add a new thing"/>
-                        <MdArrowUpward className="toiletSmall_counter_up_mat"/>
+                        <IconButton>
+                            <MdArrowUpward className="toiletSmall_counter_up_mat"/>
+                        </IconButton>
+
                         <MdArrowDownward className="toiletSmall_counter_down_mat"/>
                         <MdDirections className="toiletSmall_action_directions"/>
                     </div>

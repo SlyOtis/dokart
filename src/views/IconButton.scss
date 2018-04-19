@@ -1,0 +1,34 @@
+.iconButton_container{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    justify-content: center;
+    justify-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+.iconButton_container > * {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    display: block;
+}
+.iconButton_ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+.iconButton_ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.iconButton_ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+}
